@@ -1,0 +1,40 @@
+body {
+  background-color: #f5f7fb;
+  font-family: "Karla", sans-serif;
+  color: #293264;
+}
+
+button {
+  width: 193px;
+  height: 52px;
+  background: #4d5b9e;
+  border-radius: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #f5f7fb;
+  cursor: pointer;
+  border: none;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 31px;
+  line-height: 37px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #293264;
+  padding: 18px 0px 30px;
+}
