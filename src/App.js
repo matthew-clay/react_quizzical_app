@@ -7,9 +7,13 @@ function App() {
   // const [quiz, setQuiz] = useState([]); // fetch data from trivia_api and set them to quiz
   // const [score, setScore] = useState([]); // score state for result
 
+  // ------- functions -------
+
   const handleClick = () => {
     setStart((prevVal) => !prevVal);
   };
+
+  // -------  for component -------
 
   const welcomePage = (
     <section className="welcome">
@@ -23,7 +27,9 @@ function App() {
     </section>
   );
 
-  return <main>{!isStart ? welcomePage : <h1>Error...</h1>}</main>;
+  const quizComponent = "";
+
+  return <main>{!isStart ? welcomePage : quizComponent}</main>;
 }
 
 export default App;
