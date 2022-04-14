@@ -34,10 +34,6 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // const shuffleAnswerArray = (answersArr) => {
-  //   return answersArr.sort(() => Math.random() - 0.5);
-  // };
-
   return (
     <section className="app">
       {isStart ? (
