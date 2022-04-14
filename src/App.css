@@ -45,7 +45,7 @@ section {
   margin-bottom: 30px;
 }
 
-.btn-start {
+.btn {
   font-family: "Inter", sans-serif;
   width: 200px;
   height: 55px;
@@ -86,6 +86,7 @@ section {
 }
 
 .answers {
+  user-select: none;
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -94,6 +95,12 @@ section {
 .answer-list {
   cursor: pointer;
   padding: 5px 10px;
-  border: 1px solid #293264;
+  color: #293264;
   border-radius: 10px;
+  border: 1px solid #293264;
+  margin-right: 15px;
+}
+
+main > .btn {
+  margin-top: 45px;
 }

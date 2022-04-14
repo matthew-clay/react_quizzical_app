@@ -1,12 +1,10 @@
-import { nanoid } from "nanoid";
+import { decode } from "html-entities";
 
 function Answer(props) {
-  console.log("Answer props:", props);
-
   const answerList = props.answers.map((answer) => {
     return (
-      <li className="answer-list" key={nanoid()}>
-        {answer}
+      <li key={answer} className="answer-list">
+        {decode(answer)}
       </li>
     );
   });
