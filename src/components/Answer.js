@@ -1,14 +1,9 @@
-import { decode } from "html-entities";
-
 function Answer(props) {
-  const answerList = props.answers.map((answer) => {
-    return (
-      <li key={answer} className="answer-list">
-        {decode(answer)}
-      </li>
-    );
-  });
-  return <ul className="answers">{answerList}</ul>;
+  return (
+    <li key={props.id} className="answer-list">
+      {props.answer}
+    </li>
+  );
 }
 
 export default Answer;

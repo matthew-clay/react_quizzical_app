@@ -1,23 +1,16 @@
-import Question from "./Question";
 import Answer from "./Answer";
-import { decode } from "html-entities";
 
 function Quiz(props) {
-  const generateQuizzes = props.quizzes.map((quiz) => {
-    const newAnswers = quiz.answers.sort(() => Math.random() - 0.5);
-    return (
-      <div className="quiz" key={quiz.id}>
-        <Question question={decode(quiz.question)} />
-        <Answer answers={newAnswers} correct_answer={quiz.correct_answer} />
-      </div>
-    );
+  const generateAnswers = props.answers.map((item) => {
+    return <Answer key={item.answer} answer={item.answer} id={item.id} />;
   });
-
   return (
-    <main className="container">
-      <>{generateQuizzes}</>
-      <button className="btn">Check Answers</button>
-    </main>
+    <div className="quiz">
+      <h3 className="question" key={props.id}>
+        {props.question}
+      </h3>
+      <ul className="answers">{generateAnswers}</ul>
+    </div>
   );
 }
 
